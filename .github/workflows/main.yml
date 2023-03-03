@@ -42,7 +42,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           prerelease: true
-          files: ${{ env.repository_name }}-${{ env.date_today }}.zip
-          tag_name: continuous
+          files: ${{ env.main_project_module }}/build/outputs/apk/debug/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
