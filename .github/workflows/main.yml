@@ -38,5 +38,5 @@ jobs:
         with:
           name: ${{ env.repository_name }} - ${{ env.date_today }}
           tag_name: d/${{ env.date_today }}
-          prerelease: false
+          prerelease: true
           files: ${{ env.main_project_module }}/build/outputs/apk/debug/app-debug.apk
